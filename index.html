@@ -7,25 +7,24 @@
     <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-    <header class="main-header">
-  <div class="logo">🛒 MyStore</div>
+<header class="main-header">
+  <div class="header-container">
+    <div class="logo">🛒 MyStore</div>
 
-  <nav class="nav-links">
-    <a href="#">Home</a>
-    <a href="#">Products</a>
-    <a href="#">About</a>
-    <a href="#">Contact</a>
-  </nav>
+    <nav class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">Products</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
 
-  <div class="header-right">
-    <input type="text" placeholder="Search..." class="search-bar" />
-
-    <div class="cart-icon">
-      🛍️
-      <span class="cart-count">3</span>
+    <div class="header-right">
+      <input type="text" placeholder="Search..." class="search-bar" />
+      <div class="cart-icon">
+        🛍️<span class="cart-count">3</span>
+      </div>
+      <div class="hamburger">&#9776;</div>
     </div>
-
-    <div class="hamburger">&#9776;</div>
   </div>
 </header>
 <section class="hero">
@@ -35,8 +34,12 @@
     <a href="#" class="cta-button">Shop Now</a>
   </div>
 </section>
-
-
+<section class="products-section" id="products">
+  <h2>Our Products</h2>
+  <div class="product-grid" id="product-grid">
+    <!-- Product cards will be injected here dynamically -->
+  </div>
+</section>
     <script src="scripts/app.js"></script>
 </body>
 </html>
