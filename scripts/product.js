@@ -10,7 +10,7 @@ fetch(`https://fakestoreapi.com/products/${productId}`)
 
     productDetailContainer.innerHTML = `
       <div class="zoom-container">
-        <img class="product-image" src="${product.image}" alt="${product.title}">
+        <img class="product-image" src="${product.image}" alt="${product.title}" loading="lazy" decoding="async">
       </div>
       <div class="product-info">
         <h1>${product.title}</h1>

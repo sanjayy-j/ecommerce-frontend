@@ -16,7 +16,7 @@ if (cart.length === 0) {
     const summaryItem = document.createElement("div");
     summaryItem.classList.add("cart-item-card");
     summaryItem.innerHTML = `
-      <img src="${item.image}" alt="${item.title}" class="cart-item-img" />
+      <img src="${item.image}" alt="${item.title}" class="cart-item-img" loading="lazy" decoding="async" />
       <div class="cart-item-info">
         <h3>${item.title}</h3>
         <p>Size: ${item.size}</p>

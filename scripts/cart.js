@@ -27,7 +27,7 @@ function renderCart() {
     itemCard.classList.add("cart-item-card");
 
     itemCard.innerHTML = `
-      <img src="${item.image}" alt="${item.title}" class="cart-item-img" />
+      <img src="${item.image}" alt="${item.title}" class="cart-item-img" loading="lazy" decoding="async" />
       <div class="cart-item-info">
         <h3>${item.title}</h3>
         <p><strong>Size:</strong> ${item.size || "N/A"}</p>
