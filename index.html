@@ -3,22 +3,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>MyStore</title>
+  <title>KaizenKart</title>
   <link rel="stylesheet" href="styles/main.css" />
 </head>
 <body>
   <header class="main-header">
     <div class="header-container">
-      <div class="logo">🛒 MyStore</div>
+      <div class="logo">🈶 KaizenKart</div>
+
       <nav class="nav-links">
         <a href="#hero">Home</a>
         <a href="#products">Products</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
       </nav>
+
       <div class="header-right">
         <input type="text" placeholder="Search..." class="search-bar" />
         <div class="cart-icon" onclick="window.location.href='cart.html'">🛍️ <span class="cart-count">0</span></div>
+        <button id="login-btn" onclick="window.location.href='login.html'" class="auth-btn">Login</button>
+        <button id="logout-btn" class="auth-btn hidden">Logout</button>
         <div class="hamburger">&#9776;</div>
       </div>
     </div>
@@ -26,33 +30,33 @@
 
   <section class="hero" id="hero">
     <div class="hero-content">
-      <h1>Biggest Sale of the Year!</h1>
-      <p>Up to 70% off on all categories. Limited time only.</p>
+      <h1>Unlock Zen Deals This Season!</h1>
+      <p>Experience shopping with harmony. Up to 70% off limited items.</p>
       <a href="#products" class="cta-button">Shop Now</a>
     </div>
   </section>
 
   <section class="products-section" id="products">
     <h2>Our Products</h2>
-    <div class="product-grid" id="product-grid">
-      <!-- Product cards appear here -->
-    </div>
+    <div class="product-grid" id="product-grid"></div>
   </section>
 
-  <section id="about" class="info-section">
-    <h2>About Us</h2>
-    <p>We bring the best products to your doorstep with a smooth and interactive frontend.</p>
+  <section id="about" class="info-section about-section">
+    <h2>About KaizenKart</h2>
+    <p>Inspired by the Japanese philosophy of continuous improvement (Kaizen), we bring you a refined and ever-evolving shopping experience. Quality meets elegance here.</p>
   </section>
 
-  <section id="contact" class="info-section">
-    <h2>Contact</h2>
-    <p>Email: kaizen.aex@gmail.com</p>
-    <p>Phone: +91-7010756792</p>
+  <section id="contact" class="info-section contact-section">
+    <h2>Contact Us</h2>
+    <p>Email: <a href="mailto:kaizen.aex@gmail.com">kaizen.aex@gmail.com</a></p>
+    <p>Phone: <a href="tel:+917010756792">+91-7010756792</a></p>
   </section>
 
-  <script src="scripts/app.js"></script>
+  <script type="module" src="scripts/app.js"></script>
 </body>
 </html>
+
+
 
 
 

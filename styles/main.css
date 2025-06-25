@@ -478,6 +478,73 @@ select#size-select {
     text-align: center;
   }
 }
+/* === AUTH BUTTONS === */
+.auth-btn {
+  padding: 0.4rem 0.9rem;
+  font-size: 0.95rem;
+  background: #333;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.auth-btn:hover {
+  background: #111;
+}
+
+.hidden {
+  display: none !important;
+}
+
+/* === JAPANESE THEME ENHANCEMENTS === */
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  background: #fffefb;
+  color: #222;
+}
+
+/* About & Contact Enhancements */
+.about-section,
+.contact-section {
+  padding: 4rem 2rem;
+  background: linear-gradient(to right, #fdfcfb, #e2d1c3);
+  border-top: 1px solid #eee;
+  text-align: center;
+}
+
+.about-section h2,
+.contact-section h2 {
+  font-size: 2.2rem;
+  color: #111;
+  margin-bottom: 1rem;
+}
+
+.about-section p,
+.contact-section p {
+  font-size: 1.05rem;
+  color: #444;
+  max-width: 700px;
+  margin: auto;
+  line-height: 1.7;
+}
+
+.contact-section a {
+  color: #ff6f00;
+  text-decoration: none;
+}
+
+.contact-section a:hover {
+  text-decoration: underline;
+}
+.user-greet {
+  font-weight: 500;
+  color: #333;
+  padding-left: 10px;
+  font-size: 0.95rem;
+}
+
 
 
 
