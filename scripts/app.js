@@ -55,7 +55,7 @@ logoutBtn?.addEventListener("click", async () => {
     alert("Logout error: " + error.message);
   }
 });
-// 👋 Display username if logged in
+// Display username if logged in
 const username = localStorage.getItem("username");
 if (username) {
   const greetSpan = document.createElement("span");
@@ -63,7 +63,6 @@ if (username) {
   greetSpan.textContent = `Hi, ${username}`;
   document.querySelector(".header-right")?.appendChild(greetSpan);
 }
-
 
 
 
