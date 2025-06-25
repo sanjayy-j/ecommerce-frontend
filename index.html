@@ -1,45 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-Commerce Frontend</title>
-    <link rel="stylesheet" href="styles/main.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>E-Commerce Frontend</title>
+  <link rel="stylesheet" href="styles/main.css" />
 </head>
 <body>
-<header class="main-header">
-  <div class="header-container">
-    <div class="logo">🛒 MyStore</div>
 
-    <nav class="nav-links">
-      <a href="#">Home</a>
-      <a href="#">Products</a>
-      <a href="#">About</a>
-      <a href="#">Contact</a>
-    </nav>
-
-    <div class="header-right">
-      <input type="text" placeholder="Search..." class="search-bar" />
-      <div class="cart-icon">
-        🛍️<span class="cart-count">3</span>
-      </div>
-      <div class="hamburger">&#9776;</div>
+  <!-- Header -->
+    <header class="main-header">
+    <div class="header-container">
+        <div class="logo">🛒 MyStore</div>
+        <nav class="nav-links">
+        <a href="index.html#hero">Home</a>
+        <a href="index.html#products">Products</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact">Contact</a>
+        </nav>
+        <div class="header-right">
+        <input type="text" placeholder="Search..." class="search-bar" />
+        <div class="cart-icon" onclick="window.location.href='cart.html'">🛍️ <span class="cart-count">0</span></div>
+        <div class="hamburger">&#9776;</div>
+        </div>
     </div>
-  </div>
-</header>
-<section class="hero">
-  <div class="hero-content">
-    <h1>Biggest Sale of the Year!</h1>
-    <p>Up to 70% off on all categories. Limited time only.</p>
-    <a href="#" class="cta-button">Shop Now</a>
-  </div>
-</section>
-<section class="products-section" id="products">
-  <h2>Our Products</h2>
-  <div class="product-grid" id="product-grid">
-    <!-- Product cards will be injected here dynamically -->
-  </div>
-</section>
-    <script src="scripts/app.js"></script>
+    </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <h1>Biggest Sale of the Year!</h1>
+      <p>Up to 70% off on all categories. Limited time only.</p>
+      <a href="#products" class="cta-button">Shop Now</a>
+    </div>
+  </section>
+
+  <!-- Product Grid Section -->
+  <section class="products-section" id="products">
+    <h2>Our Products</h2>
+    <div class="product-grid" id="product-grid">
+      <!-- Dynamic product cards will appear here -->
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="info-section">
+    <h2>About Us</h2>
+    <p>We are a passionate team creating a modern e-commerce experience. Our goal is to bring the best products to your doorstep with a smooth and interactive frontend.</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="info-section">
+    <h2>Contact</h2>
+    <p>Email: kaizen.aex@gmail.com</p>
+    <p>Phone: +91-7010756792</p>
+  </section>
+
+  <script src="scripts/app.js"></script>
 </body>
 </html>
+
