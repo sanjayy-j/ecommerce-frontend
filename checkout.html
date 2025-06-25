@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Your Cart</title>
+  <title>Checkout</title>
   <link rel="stylesheet" href="styles/main.css" />
 </head>
 <body>
@@ -24,20 +24,23 @@
     </div>
   </header>
 
-  <main class="cart-page">
-    <h2>Your Shopping Cart</h2>
-    <div id="cart-items"></div>
-    <div class="cart-total" id="total-amount"></div>
-    <div class="cart-actions">
-      <a href="index.html#products" class="cta-button">Continue Shopping</a>
-      <button id="checkout-btn" class="cta-button">Proceed to Checkout</button>
-    </div>
+  <main class="checkout-page">
+    <h2>Checkout</h2>
+    <form id="checkout-form" class="checkout-form">
+      <label>Name: <input type="text" name="name" required></label>
+      <label>Email: <input type="email" name="email" required></label>
+      <label>Shipping Address: <textarea name="address" required></textarea></label>
+
+      <h3>Order Summary</h3>
+      <div id="order-summary"></div>
+
+      <div class="cart-total" id="checkout-total"></div>
+
+      <button type="submit" class="cta-button">Place Order</button>
+    </form>
   </main>
 
-  <script src="scripts/cart.js"></script>
+  <script src="scripts/checkout.js"></script>
 </body>
 </html>
-
-
-
 

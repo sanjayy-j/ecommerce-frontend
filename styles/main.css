@@ -367,48 +367,71 @@ select#size-select {
   }
 }
 
-/* === CART PAGE === */
-.cart-container {
+/* === Cart Page Redesign === */
+.cart-page {
   padding: 4rem 2rem;
   background-color: #fff;
+  max-width: 1000px;
+  margin: auto;
 }
 
-.cart-items-grid {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  margin-top: 2rem;
+.cart-page h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
 }
 
-.cart-item {
+.cart-item-card {
   display: flex;
-  align-items: center;
-  gap: 1.5rem;
+  gap: 1.2rem;
+  margin-bottom: 1.5rem;
   padding: 1rem;
-  background-color: #fffbe6;
-  border-radius: 10px;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+  border: 1px solid #eee;
+  border-radius: 8px;
+  background-color: #fcfcfc;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.cart-item img {
-  height: 100px;
-  width: auto;
+.cart-item-img {
+  height: 80px;
+  width: 80px;
   object-fit: contain;
   border-radius: 5px;
+  background: white;
+  border: 1px solid #ddd;
+  padding: 0.5rem;
 }
 
 .cart-item-info {
   flex: 1;
+  min-width: 180px;
 }
 
 .cart-item-info h3 {
-  font-size: 1.1rem;
   margin: 0 0 0.3rem;
+  font-size: 1.1rem;
 }
 
 .cart-item-info p {
   margin: 0.2rem 0;
   color: #444;
+  font-size: 0.95rem;
+}
+
+.remove-btn {
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 0.4rem 0.7rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.remove-btn:hover {
+  background-color: #cc0000;
 }
 
 .cart-total {
@@ -416,26 +439,46 @@ select#size-select {
   font-weight: bold;
   text-align: right;
   margin-top: 2rem;
+  color: #222;
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
 }
 
-/* === INFO SECTIONS === */
-.info-section {
-  padding: 4rem 2rem;
-  background-color: #fff;
-  color: #333;
-  text-align: center;
+.cart-actions {
+  text-align: right;
+  margin-top: 1.5rem;
 }
 
-.info-section h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
+.cart-actions a {
+  background-color: #ff6f00;
+  color: white;
+  text-decoration: none;
+  padding: 0.7rem 1.2rem;
+  border-radius: 5px;
+  font-weight: 600;
 }
 
-.info-section p {
-  font-size: 1rem;
-  max-width: 600px;
-  margin: 0 auto 1rem;
+.cart-actions a:hover {
+  background-color: #e65c00;
 }
+
+/* Mobile friendly */
+@media (max-width: 600px) {
+  .cart-item-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cart-item-img {
+    margin-bottom: 1rem;
+  }
+
+  .cart-total,
+  .cart-actions {
+    text-align: center;
+  }
+}
+
 
 
 
