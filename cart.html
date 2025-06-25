@@ -18,19 +18,20 @@
       </nav>
       <div class="header-right">
         <input type="text" placeholder="Search..." class="search-bar" />
-        <div class="cart-icon" onclick="window.location.href='cart.html'">🛍️ <span class="cart-count">0</span></div>
+        <div class="cart-icon">🛍️ <span class="cart-count">0</span></div>
         <div class="hamburger">&#9776;</div>
       </div>
     </div>
   </header>
 
-  <main class="cart-page">
+  <main class="cart-container">
     <h2>Your Shopping Cart</h2>
-    <div id="cart-items" class="cart-items-container"></div>
-    <div id="total-amount" class="cart-total"></div>
+    <div id="cart-items" class="cart-items-grid"></div>
+    <p id="total-amount"></p>
   </main>
 
   <script src="scripts/cart.js"></script>
 </body>
 </html>
+
 

@@ -1,4 +1,3 @@
-// Update cart count badge in header
 const badge = document.querySelector(".cart-count");
 const cart = JSON.parse(localStorage.getItem("cart")) || [];
 
@@ -15,29 +14,24 @@ if (cart.length === 0) {
   totalAmount.textContent = "";
 } else {
   let total = 0;
-
   cart.forEach(item => {
-    const itemPrice = item.price * 80;
-    const itemTotal = item.quantity * itemPrice;
-    total += itemTotal;
-
     const itemDiv = document.createElement("div");
     itemDiv.classList.add("cart-item");
     itemDiv.innerHTML = `
-      <div class="cart-item-card">
-        <img src="${item.image}" alt="${item.title}" class="cart-item-img" />
-        <div class="cart-item-info">
-          <h3>${item.title}</h3>
-          <p>Price per unit: ₹${itemPrice.toFixed(2)}</p>
-          <p>Quantity: ${item.quantity}</p>
-          <p>Subtotal: ₹${itemTotal.toFixed(2)}</p>
-        </div>
+      <img src="${item.image}" alt="${item.title}">
+      <div>
+        <h3>${item.title}</h3>
+        <p>Size: ${item.size || 'N/A'}</p>
+        <p>Quantity: ${item.quantity}</p>
+        <p>Price: ₹${(item.price * 80).toFixed(2)}</p>
+        <p>Subtotal: ₹${(item.price * 80 * item.quantity).toFixed(2)}</p>
       </div>
     `;
-
     cartItemsContainer.appendChild(itemDiv);
+    total += item.price * 80 * item.quantity;
   });
 
   totalAmount.textContent = `Total: ₹${total.toFixed(2)}`;
 }
+
 
