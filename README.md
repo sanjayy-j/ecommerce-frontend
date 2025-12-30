@@ -29,6 +29,7 @@
 ---
 
 ## 📁 Folder Structure
+```
 KaizenKart/
 │
 ├── index.html
@@ -50,7 +51,7 @@ KaizenKart/
 │ └── firebase.js
 │
 └── README.md
-
+```
 ---
 
 🙏 Acknowledgements
