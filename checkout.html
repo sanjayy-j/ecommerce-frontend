@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Checkout</title>
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+  <header class="main-header">
+    <div class="header-container">
+      <div class="logo">🈶 KaizenKart</div>
+      <nav class="nav-links">
+        <a href="index.html#hero">Home</a>
+        <a href="index.html#products">Products</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <div class="header-right">
+        <input type="text" placeholder="Search..." class="search-bar" />
+        <div class="cart-icon" onclick="window.location.href='cart.html'">🛍️ <span class="cart-count">0</span></div>
+        <div class="hamburger">&#9776;</div>
+      </div>
+    </div>
+  </header>
+
+  <main class="checkout-page">
+    <h2>Checkout</h2>
+    <form id="checkout-form" class="checkout-form">
+      <label>Name: <input type="text" name="name" required></label>
+      <label>Email: <input type="email" name="email" required></label>
+      <label>Shipping Address: <textarea name="address" required></textarea></label>
+
+      <h3>Order Summary</h3>
+      <div id="order-summary"></div>
+
+      <div class="cart-total" id="checkout-total"></div>
+
+      <button type="submit" class="cta-button">Place Order</button>
+    </form>
+  </main>
+
+  <script src="scripts/checkout.js" defer></script>
+</body>
+</html>
+

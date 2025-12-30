@@ -1,0 +1,144 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fffef5;
+  color: #333;
+}
+
+/* Main Container */
+.auth-container {
+  max-width: 400px;
+  margin: 5rem auto;
+  padding: 2rem;
+  background: #fffdf5;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.auth-container h2 {
+  margin-bottom: 1.2rem;
+  font-size: 1.8rem;
+  color: #222;
+}
+
+/* Form Toggle (Login / Signup) */
+.form-toggle {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1.5rem;
+}
+
+.form-toggle button {
+  flex: 1;
+  padding: 0.7rem;
+  background: #eee;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+  border-radius: 5px;
+}
+
+.form-toggle .active {
+  background: #ffcc33;
+  color: #222;
+}
+
+/* Form Layout */
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: left;
+}
+
+/* Inputs */
+.auth-form input {
+  padding: 0.7rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  transition: border-color 0.2s ease;
+}
+
+.auth-form input:focus {
+  outline: none;
+  border-color: #ff6f00;
+  box-shadow: 0 0 4px rgba(255, 111, 0, 0.3);
+}
+
+/* Submit Button */
+.auth-form button {
+  padding: 0.8rem;
+  font-size: 1rem;
+  background-color: #ff6f00;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.auth-form button:hover {
+  background-color: #e65c00;
+}
+
+/* Password Toggle */
+.password-field {
+  position: relative;
+}
+
+.password-field .toggle-password {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 1rem;
+  color: #888;
+}
+
+/* Utility Classes */
+.hidden {
+  display: none;
+}
+
+/* Success & Error Messages */
+.auth-message {
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+.auth-message.error {
+  color: red;
+}
+
+.auth-message.success {
+  color: green;
+}
+
+/* Links */
+.auth-container p {
+  font-size: 0.9rem;
+  margin-top: 1rem;
+}
+
+.auth-container a {
+  color: #ff6f00;
+  text-decoration: none;
+}
+
+.auth-container a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .auth-container {
+    margin: 2rem 1rem;
+    padding: 1.5rem;
+  }
+}
+

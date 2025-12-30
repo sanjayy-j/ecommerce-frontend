@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Product Detail</title>
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+  <header class="main-header">
+    <div class="header-container">
+      <div class="logo">🈶 KaizenKart</div>
+      <nav class="nav-links">
+        <a href="index.html#hero">Home</a>
+        <a href="index.html#products">Products</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+        <div class="header-right">
+        <input type="text" placeholder="Search..." class="search-bar" />
+        <div class="cart-icon" onclick="window.location.href='cart.html'">🛍️ <span class="cart-count">0</span></div>
+        <button id="login-btn" onclick="window.location.href='login.html'" class="auth-btn">Login</button>
+        <button id="logout-btn" class="auth-btn hidden">Logout</button>
+        <div class="hamburger">&#9776;</div>
+        </div>
+    </div>
+  </header>
+
+  <main class="product-detail-container">
+    <!-- Product info loads here -->
+  </main>
+
+  <script type="module" src="scripts/product.js" defer></script>
+  <script type="module">
+  import { auth } from './scripts/firebase.js';
+  import { onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+
+  const loginBtn = document.getElementById("login-btn");
+  const logoutBtn = document.getElementById("logout-btn");
+
+  onAuthStateChanged(auth, (user) => {
+    if (user) {
+      loginBtn?.classList.add("hidden");
+      logoutBtn?.classList.remove("hidden");
+    } else {
+      loginBtn?.classList.remove("hidden");
+      logoutBtn?.classList.add("hidden");
+    }
+  });
+
+  logoutBtn?.addEventListener("click", async () => {
+    try {
+      await signOut(auth);
+      alert("Logged out!");
+      window.location.href = "login.html";
+    } catch (e) {
+      alert("Logout error: " + e.message);
+    }
+  });
+</script>
+
+</body>
+</html>
+
+
+

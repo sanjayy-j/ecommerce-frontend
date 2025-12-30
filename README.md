@@ -1,4 +1,4 @@
-# 🈶 KaizenKart – E-Commerce Site
+# 🈶 KaizenKart –  E-Commerce Site
 
 **KaizenKart** is a minimal, fast, and responsive e-commerce website inspired by the Japanese philosophy of _Kaizen_ (continuous improvement). This project integrates a beautiful UI, functional cart system, and Firebase Authentication to deliver a smooth shopping experience.
 
@@ -29,7 +29,6 @@
 ---
 
 ## 📁 Folder Structure
-```
 KaizenKart/
 │
 ├── index.html
@@ -51,7 +50,7 @@ KaizenKart/
 │ └── firebase.js
 │
 └── README.md
-```
+
 ---
 
 🙏 Acknowledgements
