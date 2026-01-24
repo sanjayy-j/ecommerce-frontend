@@ -23,7 +23,7 @@
 
 - **Frontend:** HTML5, CSS3, Vanilla JavaScript
 - **Auth:** Firebase Authentication
-- **Hosting:** Netlify (or GitHub Pages / Vercel)
+- **Hosting:** Vercel
 - **API:** [FakeStoreAPI](https://fakestoreapi.com/)
 
 ---
@@ -62,3 +62,4 @@ Firebase
 
 
 TinyPNG and Squoosh for image optimization
+
