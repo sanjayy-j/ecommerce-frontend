@@ -56,11 +56,9 @@ KaizenKart/
 
 🙏 Acknowledgements
 
-FakeStoreAPI
+- FakeStoreAPI
+- Firebase
+- TinyPNG and Squoosh for image optimization
 
-Firebase
-
-
-TinyPNG and Squoosh for image optimization
 
 
